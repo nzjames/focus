@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Focus</title>
+
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: .5em;
+			color: #333;
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+		}
+		body {
+			background-color:#ff99af;
+			background-image:
+			radial-gradient(at 21% 78%, hsla(8,100%,89%,1) 0px, transparent 50%),
+			radial-gradient(at 7% 54%, hsla(67,100%,89%,1) 0px, transparent 50%),
+			radial-gradient(at 6% 58%, hsla(163,100%,89%,1) 0px, transparent 50%),
+			radial-gradient(at 61% 36%, hsla(260,100%,89%,1) 0px, transparent 50%),
+			radial-gradient(at 8% 91%, hsla(61,100%,89%,1) 0px, transparent 50%),
+			radial-gradient(at 26% 40%, hsla(291,100%,89%,1) 0px, transparent 50%),
+			radial-gradient(at 37% 30%, hsla(153,100%,89%,1) 0px, transparent 50%);
+		}
+
+		main {
+			max-width: 100ch;
+			margin: 0.5em auto;
+		}
+
+		fieldset {
+			margin-top: 1em;
+			border: 3px solid #333;
+		}
+
+		legend {
+			font-weight: bold;
+			background: #333;
+			color: #fff;
+			padding: 0 1em;
+			text-transform: uppercase;
+		}
+
+		form {
+			display: inline;
+		}
+
+		iframe {
+			width: 100%;
+			border: 0;
+			padding: 0;
+		}
+
+		.clipboard-button {
+			display: block;
+			background: transparent;
+			border: none;
+			font-size: 1em;
+			text-align: left;
+		}
+
+		.clipboard-button:active {
+			outline: 5px solid #eeacee;
+		}
+
+		::-moz-focus-inner {
+			border: none;
+		}
+
+		.status {
+			color: #333;
+			text-decoration: 3px solid underline #333;
+			text-decoration-skip-ink: none;
+		}
+
+		h1 {
+			background: #333;
+			color: #eeacee;
+			padding: .25em.5em;
+			font-size: calc(.75em + 2vw);
+		}
+
+		h2,
+		h3 {
+			color: #333;
+			margin-bottom: .5em;
+			padding: 0 .5em;
+		}
+
+		.next-text {
+			background: rgba(51, 51, 51, 0.9);
+			color: #eeacee;
+		}
+
+		h2 mark,
+		h3 mark {
+			background: rgba(255, 255, 255, .7);
+			padding: 0 0.5em;
+		}
+	</style>
+
+
+</head>
+
+<body>
+	<main>
+		<h1>Good morning</h1>
+		<fieldset>
+			<legend>Day Start</legend>
+			<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+				src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/295975668&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+			</iframe>
+
+		</fieldset>
+
+		<fieldset>
+			<legend>Focus</legend>
+			<iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay"
+				src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1428218704&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+		</fieldset>
+
+		<fieldset>
+			<legend>Day end</legend>
+			<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+				src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/339847396&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+		</fieldset>
+		<h1>See you tomorrow</h1>
+	</main>
+
+</body>
+
+</html>
