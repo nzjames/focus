@@ -1,0 +1,30 @@
+:root {
+  --dimension: 2ch;
+  --c-black: hsl(0, 0%, 10%, 100%);
+  --c-fuschia:  hsl(332, 94%, 49%)
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  float: left;
+  margin: 0;
+  width: var(--dimension);
+  height: var(--dimension);
+  background-color: var(--c-black);
+}
+
+.content {
+  color: #fff;
+  background-color: var(--c-black);
+}
+div, iframe {
+  overflow: auto;
+}

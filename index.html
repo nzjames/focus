@@ -3,42 +3,39 @@
 
 <head>
 	<title>Focus</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 
 	<style>
-		* {
-			box-sizing: border-box;
+		:root {
+			--s-2: 1em;
+			--s: 0.5em;
+			--s-: -0.5em;
 		}
 
 		body {
-			margin: .5em;
-			color: #333;
 			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 		}
-		body {
-			background-color:#ff99af;
-			background-image:
-			radial-gradient(at 21% 78%, hsla(8,100%,89%,1) 0px, transparent 50%),
-			radial-gradient(at 7% 54%, hsla(67,100%,89%,1) 0px, transparent 50%),
-			radial-gradient(at 6% 58%, hsla(163,100%,89%,1) 0px, transparent 50%),
-			radial-gradient(at 61% 36%, hsla(260,100%,89%,1) 0px, transparent 50%),
-			radial-gradient(at 8% 91%, hsla(61,100%,89%,1) 0px, transparent 50%),
-			radial-gradient(at 26% 40%, hsla(291,100%,89%,1) 0px, transparent 50%),
-			radial-gradient(at 37% 30%, hsla(153,100%,89%,1) 0px, transparent 50%);
-		}
 
-		main {
-			max-width: 100ch;
-			margin: 0.5em auto;
+		body {
+			background-color: pink;
+			background-image:
+				radial-gradient(at 21% 78%, hsla(8, 100%, 89%, 1) 0px, transparent 50%),
+				radial-gradient(at 7% 54%, hsla(67, 100%, 89%, 1) 0px, transparent 50%),
+				radial-gradient(at 6% 58%, hsla(163, 100%, 89%, 1) 0px, transparent 50%),
+				radial-gradient(at 61% 36%, hsla(260, 100%, 89%, 1) 0px, transparent 50%),
+				radial-gradient(at 8% 91%, hsla(61, 100%, 89%, 1) 0px, transparent 50%),
+				radial-gradient(at 26% 40%, hsla(291, 100%, 89%, 1) 0px, transparent 50%),
+				radial-gradient(at 37% 30%, hsla(153, 100%, 89%, 1) 0px, transparent 50%);
 		}
 
 		fieldset {
-			margin-top: 1em;
+			margin-top: var(--s-2);
 			border: 3px solid #333;
 		}
 
 		legend {
 			font-weight: bold;
-			background: #333;
+			background: var(--c-black);
 			color: #fff;
 			padding: 0 1em;
 			text-transform: uppercase;
@@ -54,31 +51,14 @@
 			padding: 0;
 		}
 
-		.clipboard-button {
-			display: block;
-			background: transparent;
-			border: none;
-			font-size: 1em;
-			text-align: left;
-		}
-
-		.clipboard-button:active {
-			outline: 5px solid #eeacee;
-		}
-
-		::-moz-focus-inner {
-			border: none;
-		}
-
-		.status {
-			color: #333;
-			text-decoration: 3px solid underline #333;
-			text-decoration-skip-ink: none;
+		main {
+			max-width: 100ch;
+			margin: 0 auto;
 		}
 
 		h1 {
-			background: #333;
-			color: #eeacee;
+			color: #fff;
+			background: var(--c-black);
 			padding: .25em.5em;
 			font-size: calc(.75em + 2vw);
 		}
@@ -86,8 +66,8 @@
 		h2,
 		h3 {
 			color: #333;
-			margin-bottom: .5em;
-			padding: 0 .5em;
+			margin-bottom: var(--s);
+			padding: 0 var(--s);
 		}
 
 		.next-text {
@@ -98,8 +78,13 @@
 		h2 mark,
 		h3 mark {
 			background: rgba(255, 255, 255, .7);
-			padding: 0 0.5em;
+			padding: 0 var(--s);
 		}
+
+		.mosaic-container {
+			margin-top: var(--s-2);
+		}
+
 	</style>
 
 
@@ -115,12 +100,26 @@
 			</iframe>
 
 		</fieldset>
-
-		<fieldset>
-			<legend>Focus</legend>
-			<iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay"
-				src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1428218704&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-		</fieldset>
+		<div class="mosaic-container"> 
+			<div id="fadeIn">
+				<p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p></p>
+				<p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p>
+				<p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p>
+				<p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p> 
+				<p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p> 
+				<p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p>
+			</div>
+			<iframe src="https://musicforprogramming.net/latest/" style="width: 100vw; height: 40vh;">
+			</iframe>
+			<div id="fadeOut">
+				<p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p></p>
+				<p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p>
+				<p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p>
+				<p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p> 
+				<p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p> 
+				<p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p>
+			</div>
+		</div>
 
 		<fieldset>
 			<legend>Day end</legend>
@@ -129,6 +128,37 @@
 		</fieldset>
 		<h1>See you tomorrow</h1>
 	</main>
+<script>
+let fadeInEls = [...document.querySelectorAll("#fadeIn p")];
+let fadeOutEls = [...document.querySelectorAll("#fadeOut p")];
+
+function rnd(min, max) {
+  // min and max included
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+function setPixelStyle(min, max, alphaMin, alphaMax, els) {
+  for (let ii = min; ii <= max; ii += 1) {
+    let alpha = rnd(alphaMin, alphaMax);
+    els[ii].style.backgroundColor = `hsl(0, 0%, 10%, ${alpha}%)`;
+  }
+}
+setPixelStyle(0, 49, 5, 50, fadeInEls);
+setPixelStyle(50, 99, 25, 90, fadeInEls);
+setPixelStyle(100, 149, 55, 95, fadeInEls);
+setPixelStyle(150, 199, 75, 100, fadeInEls);
+setPixelStyle(200, 249, 85, 100, fadeInEls);
+setPixelStyle(250, 299, 90, 100, fadeInEls);
+
+setPixelStyle(0, 49, 90, 100, fadeOutEls);
+setPixelStyle(50, 99, 85, 100, fadeOutEls);
+setPixelStyle(100, 149, 75, 100, fadeOutEls);
+setPixelStyle(150, 199, 55, 95, fadeOutEls);
+setPixelStyle(200, 249, 25, 90, fadeOutEls);
+setPixelStyle(250, 299, 5, 50, fadeOutEls);
+
+
+</script>
 
 </body>
 
