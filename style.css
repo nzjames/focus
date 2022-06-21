@@ -1,30 +1,114 @@
 :root {
-  --dimension: 2ch;
-  --c-black: hsl(0, 0%, 10%, 100%);
-  --c-fuschia:  hsl(332, 94%, 49%)
+    --s-2: 1em;
+    --s: 0.5em;
+    --s-: -0.5em;
+
+    --dimension: 1vw;
+    --c-black: hsl(0, 0%, 10%, 100%);
+    --c-fuschia: hsl(332, 94%, 49%)
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 p {
-  float: left;
-  margin: 0;
-  width: var(--dimension);
-  height: var(--dimension);
-  background-color: var(--c-black);
+    float: left;
+    margin: 0;
+    width: var(--dimension);
+    height: var(--dimension);
+    background-color: var(--c-black);
 }
 
 .content {
-  color: #fff;
-  background-color: var(--c-black);
+    color: #fff;
+    background-color: var(--c-black);
 }
-div, iframe {
-  overflow: auto;
+
+div,
+iframe {
+    overflow: auto;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body {
+    background-color: pink;
+    background-image:
+        radial-gradient(at 21% 78%, hsla(8, 100%, 89%, 1) 0px, transparent 50%),
+        radial-gradient(at 7% 54%, hsla(67, 100%, 89%, 1) 0px, transparent 50%),
+        radial-gradient(at 6% 58%, hsla(163, 100%, 89%, 1) 0px, transparent 50%),
+        radial-gradient(at 61% 36%, hsla(260, 100%, 89%, 1) 0px, transparent 50%),
+        radial-gradient(at 8% 91%, hsla(61, 100%, 89%, 1) 0px, transparent 50%),
+        radial-gradient(at 26% 40%, hsla(291, 100%, 89%, 1) 0px, transparent 50%),
+        radial-gradient(at 37% 30%, hsla(153, 100%, 89%, 1) 0px, transparent 50%);
+}
+
+fieldset {
+    margin-top: var(--s-2);
+    border: 3px solid #333;
+}
+
+legend {
+    font-weight: bold;
+    background: var(--c-black);
+    color: #fff;
+    padding: 0 1em;
+    text-transform: uppercase;
+}
+
+form {
+    display: inline;
+}
+
+iframe {
+    border: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #fff;
+    background: var(--c-black);
+    padding: .25em.5em;
+    font-size: calc(.75em + 2vw);
+}
+
+h2,
+h3 {
+    color: #333;
+    margin-bottom: var(--s);
+    padding: 0 var(--s);
+}
+
+.next-text {
+    background: rgba(51, 51, 51, 0.9);
+    color: #eeacee;
+}
+
+h2 mark,
+h3 mark {
+    background: rgba(255, 255, 255, .7);
+    padding: 0 var(--s);
+}
+
+.mosaic-container {
+    margin-top: var(--s-2);
+}
+
+.mosaic-container > div  {
+    width: 100vw;
+}
+
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    background-color: var(--c-black);
+
 }
