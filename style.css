@@ -112,3 +112,15 @@ h3 mark {
     background-color: var(--c-black);
 
 }
+
+footer {
+    padding: .25em.5em;
+    text-align: center;
+    color: #fff;
+    background: var(--c-black);
+}
+
+a,
+a:visited {
+    color: #fff;
+}
